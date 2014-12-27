@@ -1,5 +1,5 @@
 @Config =
-	name: 'My App'
+	name: 'Meteor Factory'
 	title: 'Make Meteor Apps. Fast.'
 	subtitle: 'Create beautiful  Meteor apps really fast'
 	logo: ->
@@ -9,16 +9,13 @@
 	emails:
 		from: 'noreply@' + Meteor.absoluteUrl()
 	blog: 'http://meteorfactory.io'
-	about: 'http://meteorfactory.io'
+	about: 'http://learn.meteorfactory.io'
 	username: false
 	homeRoute: '/'
 	dashboardRoute: '/dashboard'
 	socialMedia:
-		facebook:
-			url: 'http://facebook.com/benjaminpeterjones'
-			icon: 'facebook'
 		twitter:
-			url: 'http://twitter.com/BenPeterJones'
+			url: 'http://twitter.com/meteorfactory'
 			icon: 'twitter'
 		github:
 			url: 'http://github.com/yogiben'
