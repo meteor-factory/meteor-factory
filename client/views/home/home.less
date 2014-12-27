@@ -26,6 +26,7 @@
      padding-bottom: 200px;
      height: 100vh;
      background-color: black;
+     background: inherit;
      img#logo
      {
       margin-top: 50px;
@@ -68,6 +69,11 @@
 }
 #final {
     padding-bottom: 0;
+}
+#contact
+{
+  background: transparent;
+  color: white;
 }
 .btn {
     margin-top: 20px;
@@ -363,4 +369,76 @@
           }
       }
   }
+}
+
+
+
+
+#foreground {
+background: url(/img/foreground.png) repeat 35% 35%;
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+z-index: -25;
+opacity: 0.5;
+-webkit-animation-name: STAR-MOVE;
+-webkit-animation-duration: 500s;
+-webkit-animation-timing-function: linear;
+-webkit-animation-iteration-count: infinite;
+}
+
+#midground {
+background: url(/img/midground.png) repeat 20% 20%;
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+z-index: -50;
+opacity: 0.5;
+-webkit-animation-name: STAR-MOVE;
+-webkit-animation-duration: 750s;
+-webkit-animation-timing-function: linear;
+-webkit-animation-iteration-count: infinite;
+}
+
+#background {
+background: black url(/img/background.png) repeat 5% 5%;
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+z-index: -100;
+-webkit-animation-name: STAR-MOVE;
+-webkit-animation-duration: 1000s;
+-webkit-animation-timing-function: linear;
+-webkit-animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes STAR-MOVE {
+  from {
+    left: 0;
+    top: 0;
+  }
+  to { 
+    left: -10000px;
+    top: -2000px;
+  }
+}
+
+@-webkit-keyframes STAR-MOVE {
+  from {
+    background-position: 5% 5%
+  }
+  to { 
+    background-position: 1300% 600%
+  }
+}
+
+footer
+{
+  margin-top: 0 !important;
 }

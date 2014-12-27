@@ -172,25 +172,6 @@
             </div>
         </div>
     </section>
-
-    <!-- <section id="ipad" class="colored text-center">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-6">
-                    <h3>A revolutionary product</h3>
-                    <p>Do really cool stuff really quickly</p>
-                    <p class="text-center">
-                    <a href="{{Config.about}}" target="_blank" class="btn btn-success">
-                    Made by MeteorFactory
-                    </a>
-                    </p>
-                </div>
-                <div class="col-sm-6">
-                    <img id="ipad" src="/img/ipad.png" alt="" class="wow animated fadeInRight" data-wow-delay="1s">
-                </div>
-            </div>
-        </div>
-    </section> -->
     <section id="about">
             <div class="container">
                 <div class="row">
@@ -285,6 +266,20 @@
                 </div>
             </div>
         </section>
+        <section id="contact" class=" text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <p class="text-center">
+                        <h4>We'd love to hear from you</h4>
+                        <a href="mailto:ben@code2create.com" target="_blank" class="btn btn-lg btn-success">
+                            Contact us
+                        </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
 </div>
 {{> footerHome}}
 </template>
@@ -293,13 +288,13 @@
     id="skroll-background-intro"
     class="parallax-image-wrapper parallax-image-wrapper-100"
     data-anchor-target="#intro"
-    data-bottom-top="transform:translate3d(0px, 200%, 0px)"
-    data-top-bottom="transform:translate3d(0px, 0%, 0px)">
+    data-bottom-top="transform:translate3d(0px, 200%, 0px);opacity:2;"
+    data-top-bottom="transform:translate3d(0px, 0%, 0px);opacity:0;">
     <div
         class="parallax-image parallax-image-100"
         data-anchor-target="#intro"
-        data-bottom-top="transform: translate3d(0px, -80%, 0px);"
-        data-top-bottom="transform: translate3d(0px, 80%, 0px);"
+        data-bottom-top="transform: translate3d(0px, -80%, 0px);opacity:2;"
+        data-top-bottom="transform: translate3d(0px, 80%, 0px);opacity:0;"
     ></div>
     <!--the +/-80% translation can be adjusted to control the speed difference of the image-->
 </div>
