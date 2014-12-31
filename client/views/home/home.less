@@ -7,7 +7,7 @@
 
   &>div
   {
-    background-image:url(img/background-intro.jpg);
+    // background-image:url(img/background-intro.jpg);
   }
 }
 
@@ -26,7 +26,7 @@
 
 @media (max-width: @screen-xs-max) {
     #skroll-background-intro > div {
-      background: #2c3539;
+      // background: #2c3539;
     }
 }
 
@@ -41,6 +41,7 @@
       }
  }
  #intro {
+    overflow: hidden;
      padding-top: 0;
      padding-bottom: 200px;
      height: 100%;
@@ -54,6 +55,30 @@
      h1,h2 {
          // padding-top: 20vh;
          color: white;
+    }
+
+    .container.absolute
+    {
+      position: absolute;
+      left: 0;
+      width: 100%;
+      top: 30%;
+    }
+
+    position: relative;
+    #meteor-bottom
+    {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+    }
+    #meteor-flag
+    {
+      position: absolute;
+    bottom: 0px;
+    right: 10%;
+    max-width: 160px;
     }
 }
 #how-it-works {
@@ -92,7 +117,8 @@
 }
 #contact
 {
-  background: transparent;
+  // background: url('background.png');
+  background: black;
   color: white;
 }
 .btn {
@@ -103,6 +129,13 @@
 @media (max-width: 768px) {
   .home-layout
   {
+    #intro
+    {
+      h1
+      {
+        font-size: 20px;
+      }
+    }
     #ipad
     {
       h3
@@ -394,82 +427,6 @@
 
 
 
-#foreground {
-background: url(/img/foreground.png) repeat 35% 35%;
-position: fixed;
-top: 0;
-left: 0;
-right: 0;
-bottom: 0;
-z-index: -25;
-opacity: 0.5;
--webkit-animation-name: STAR-MOVE;
--webkit-animation-duration: 500s;
--webkit-animation-timing-function: linear;
--webkit-animation-iteration-count: infinite;
-}
-
-#midground {
-background: url(/img/midground.png) repeat 20% 20%;
-position: fixed;
-top: 0;
-left: 0;
-right: 0;
-bottom: 0;
-z-index: -50;
-opacity: 0.5;
--webkit-animation-name: STAR-MOVE;
--webkit-animation-duration: 750s;
--webkit-animation-timing-function: linear;
--webkit-animation-iteration-count: infinite;
-}
-
-#background {
-background: black url(/img/background.png) repeat 5% 5%;
-position: fixed;
-top: 0;
-left: 0;
-right: 0;
-bottom: 0;
-z-index: -100;
--webkit-animation-name: STAR-MOVE;
--webkit-animation-duration: 1000s;
--webkit-animation-timing-function: linear;
--webkit-animation-iteration-count: infinite;
-}
-
-@-webkit-keyframes STAR-MOVE {
-  from {
-    left: 0;
-    top: 0;
-  }
-  to { 
-    left: -10000px;
-    top: -2000px;
-  }
-}
-
-@-webkit-keyframes STAR-MOVE {
-  from {
-    background-position: 5% 5%
-  }
-  to { 
-    background-position: 1300% 600%
-  }
-}
-
-@media (max-width: @screen-xs-max) {
-    #background, #midground, #foreground
-    {
-      animation: none;
-      -webkit-animation:none;
-    }
-
-    .wow
-    {
-      visibility: visible !important;
-    }
-}
 
 footer
 {

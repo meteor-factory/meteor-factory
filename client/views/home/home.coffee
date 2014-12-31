@@ -17,8 +17,12 @@ Template.home.rendered = () ->
 	    height: $(window).height()
 
 	    
-	s = new skrollr.init({smoothScrolling: false})
-	s.refresh()
+	if  (/Android|iPhone|iPad|iPod|BlackBerry|Windows Phone/i).test(navigator.userAgent or navigator.vendor or window.opera)
+		# $('#intro').css('background-image',"url('/img/background/5.jpg')");
+	else
+		skrollr.init
+			forceHeight: false
+			smoothScrolling: false
 
 	$( document ).ready ->
 		# alert 'ready'

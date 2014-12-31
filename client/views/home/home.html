@@ -1,6 +1,6 @@
 <template name="home">
 <div id="skrollr-body">
-    {{> skrollrBackground}} 
+    <!-- {{> skrollrBackground}}  -->
     <section id="intro" class="colored text-center">
         <header>
             <nav class="navbar navbar-default hidden-xs" role="navigation">
@@ -21,14 +21,15 @@
                 </div>
             </nav>
         </header>
-        <div class="container">
+        <div class="container absolute">
             <div class="intro-well">
                 <div class="row">
                     <div class="col-lg-12 col-sm-12">
-                        <img src="/img/meteor_factory.png" id="logo" alt="" class="wow animated fadeInDown" data-wow-delay="0.2s">
+                        <img src="/img/logo.png" id="logo" alt="" class="wow animated fadeInDown" data-wow-delay="0.2s">
                         <!-- <img src="/img/meteor_agency.png" alt=""> -->
-                        <h1 class="wow fadeInUp animated" data-wow-delay="0.5s">A Meteor Agency</h1>
-                        <h2 class="wow fadeInUp animated" data-wow-delay="0.7s">Professional Meteor Development</h2>
+                        <h1 class="wow fadeInUp animated" data-wow-delay="0.5s">Professional Meteor Development</h1>
+                        <!-- <h1 class="wow fadeInUp animated" data-wow-delay="0.5s">A Meteor Agency</h1> -->
+                        <!-- <h2 class="wow fadeInUp animated" data-wow-delay="0.7s">Professional Meteor Development</h2> -->
                         <a class="btn btn-success wow fadeInUp animated" data-wow-delay="0.9s" target="_blank" href="mailto:ben@code2create.com">Contact us</a>
                     </div>
                     <!--                 <div class="col-lg-6 col-sm-6">
@@ -37,6 +38,12 @@
                 </div>
             </div>
         </div>
+        <img id="meteor-bottom" src="/img/meteor_bottom.png" alt="">
+        <img src="/img/meteor_flag.png" alt="" id="meteor-flag">
+        <!-- <img src="/img/meteor_planets.png" alt="" id="meteor-planets"> -->
+        <img src="/img/meteor_spaceman.png" alt="" id="meteor-spaceman">
+        <img src="/img/meteor_spaceship.png" alt="" id="meteor-spaceship">
+        <img src="/img/meteor_meteor.png" alt="" id="meteor-meteor">
     </section>
     <section id="how-it-works" class="text-center">
         <div class="container wow fadeIn animated">
@@ -47,10 +54,10 @@
             <div class="row" id="icon-row">
                 <div class="col-sm-4 wow fadeInLeft animated" data-wow-delay="0.4s">
                     <div class="iconbox">
-                        <img src="/img/meteor_agency_1.png" alt="">
+                        <img src="/img/Telescope.png" alt="">
                     </div>
                     <p class="icntitle">Design First</p>
-                    <p class="icnp">Everything we make looks and feels  beautiful</p>
+                    <p class="icnp">Everything we make is beautiful</p>
                 </div>
                 <div class="col-sm-4 wow fadeInUp animated" data-wow-delay="0.8s">
                     <div class="iconbox">
@@ -61,7 +68,7 @@
                 </div>
                 <div class="col-sm-4 wow fadeInRight animated" data-wow-delay="1.2s">
                     <div class="iconbox">
-                        <img src="/img/meteor_agency_3.png" alt="">
+                        <img src="/img/Moon Flag.png" alt="">
                     </div>
                     <p class="icntitle">We're entrepreneurs</p>
                     <p class="icnp">We've built our own startups</p>
@@ -89,7 +96,7 @@
                     <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
+                                <i class="fa fa-rocket fa-3x"></i>
                             </div>
                         </div>
                         <img src="/img/meteor_app_1.png" class="img-responsive" alt="">
@@ -103,7 +110,7 @@
                     <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
+                                <i class="fa fa-rocket fa-3x"></i>
                             </div>
                         </div>
                         <img src="/img/meteor_app_2.png" class="img-responsive" alt="">
@@ -117,7 +124,7 @@
                     <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
+                                <i class="fa fa-rocket fa-3x"></i>
                             </div>
                         </div>
                         <img src="/img/meteor_app_3.png" class="img-responsive" alt="">
@@ -131,7 +138,7 @@
                     <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
+                                <i class="fa fa-rocket fa-3x"></i>
                             </div>
                         </div>
                         <img src="/img/meteor_app_4.png" class="img-responsive" alt="">
@@ -145,7 +152,7 @@
                     <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
+                                <i class="fa fa-rocket fa-3x"></i>
                             </div>
                         </div>
                         <img src="/img/meteor_app_5.png" class="img-responsive" alt="">
@@ -159,7 +166,7 @@
                     <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
+                                <i class="fa fa-rocket fa-3x"></i>
                             </div>
                         </div>
                         <img src="/img/meteor_app_6.png" class="img-responsive" alt="">
@@ -226,8 +233,8 @@
                                     </div>
                                 </div>
                             </li>
-                            <li class="timeline-inverted wow fadeInRight animated" data-wow-delay="0.4s">
-                                <div class="timeline-image">
+                            <li class="timeline-inverted">
+                                <div class="timeline-image wow fadeInRight animated" data-wow-delay="0.4s">
                                     <img class="img-circle img-responsive" src="img/timeline_4.jpg" alt="">
                                 </div>
                                 <div class="timeline-panel">
@@ -271,60 +278,73 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 text-center">
-                        <h2 class="section-heading">Our Amazing Team</h2>
-                        <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                        <h2 class="section-heading">Mission Control</h2>
+                        <h3 class="section-subheading text-muted">We work to bring you the product that you want</h3>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-sm-4">
                         <div class="team-member">
-                            <img src="img/team/1.jpg" class="img-responsive img-circle" alt="">
-                            <h4>Kay Garland</h4>
-                            <p class="text-muted">Lead Designer</p>
+                            <img src="img/team/ben.jpg" class="img-responsive img-circle" alt="">
+                            <h4>Ben Jones</h4>
+                            <p class="text-muted">Founder</p>
                             <ul class="list-inline social-buttons">
-                                <li><a href="#"><i class="fa fa-twitter"></i></a>
-                                </li>
-                                <li><a href="#"><i class="fa fa-facebook"></i></a>
-                                </li>
-                                <li><a href="#"><i class="fa fa-linkedin"></i></a>
-                                </li>
+                                <li><a href="http://twitter.com/benpeterjones"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="http://bit.ly/ben_jones"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href="http://github.com/yogiben"><i class="fa fa-github"></i></a></li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-sm-4">
                         <div class="team-member">
-                            <img src="img/team/2.jpg" class="img-responsive img-circle" alt="">
-                            <h4>Larry Parker</h4>
-                            <p class="text-muted">Lead Marketer</p>
+                            <img src="img/team/michal.jpg" class="img-responsive img-circle" alt="">
+                            <h4>Michał Powaga</h4>
+                            <p class="text-muted">Developer</p>
                             <ul class="list-inline social-buttons">
-                                <li><a href="#"><i class="fa fa-twitter"></i></a>
-                                </li>
-                                <li><a href="#"><i class="fa fa-facebook"></i></a>
-                                </li>
-                                <li><a href="#"><i class="fa fa-linkedin"></i></a>
-                                </li>
+                                <li><a target="_blank" href="http://uk.linkedin.com/pub/micha%C5%82-powaga/82/642/b57"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a target="_blank" href="https://github.com/mpowaga"><i class="fa fa-github"></i></a></li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-sm-4">
                         <div class="team-member">
-                            <img src="img/team/3.jpg" class="img-responsive img-circle" alt="">
-                            <h4>Diana Pertersen</h4>
-                            <p class="text-muted">Lead Developer</p>
+                            <img src="img/team/matthew.jpg" class="img-responsive img-circle" alt="">
+                            <h4>Matthew Linares</h4>
+                            <p class="text-muted">Project Manager</p>
                             <ul class="list-inline social-buttons">
-                                <li><a href="#"><i class="fa fa-twitter"></i></a>
-                                </li>
-                                <li><a href="#"><i class="fa fa-facebook"></i></a>
-                                </li>
-                                <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                                <li><a href="https://www.linkedin.com/pub/matthew-linares/20/551/2a3"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href="https://github.com/mattlinares"><i class="fa fa-github"></i></a>
                                 </li>
                             </ul>
                         </div>
                     </div>
+
+                    <div class="col-sm-4">
+                        <div class="team-member">
+                            <img src="img/team/chris.jpg" class="img-responsive img-circle" alt="">
+                            <h4>Chris Westgarth</h4>
+                            <p class="text-muted">Content</p>
+                            <ul class="list-inline social-buttons">
+                                <li><a href="https://www.linkedin.com/pub/chris-westgarth/38/b3/894"><i class="fa fa-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="team-member">
+                            <img src="img/team/diane.jpg" class="img-responsive img-circle" alt="">
+                            <h4>Diane Germann</h4>
+                            <p class="text-muted">SEO</p>
+                            <ul class="list-inline social-buttons">
+                                <li><a target="_blank" href="https://twitter.com/dianegermann"><i class="fa fa-twitter"></i></a></li>
+                                <li><a target="_blank" href="https://www.linkedin.com/pub/diane-germann/21/941/3a0"><i class="fa fa-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
                 </div>
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2 text-center">
-                        <p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
+                        <p class="large text-muted"><i class="fa fa-map-marker"></i> We're based in Berlin</p>
                     </div>
                 </div>
             </div>

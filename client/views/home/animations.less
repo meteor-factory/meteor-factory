@@ -1,0 +1,202 @@
+@import "/client/style/bootstrap-variables.less";
+
+#foreground {
+background: url(/img/foreground.png) repeat 35% 35%;
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+z-index: -25;
+opacity: 0.5;
+-webkit-animation-name: STAR-MOVE;
+-webkit-animation-duration: 500s;
+-webkit-animation-timing-function: linear;
+-webkit-animation-iteration-count: infinite;
+
+animation-name: STAR-MOVE;
+animation-duration: 500s;
+animation-timing-function: linear;
+animation-iteration-count: infinite;
+}
+
+#midground {
+background: url(/img/midground.png) repeat 20% 20%;
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+z-index: -50;
+opacity: 0.5;
+-webkit-animation-name: STAR-MOVE;
+-webkit-animation-duration: 750s;
+-webkit-animation-timing-function: linear;
+-webkit-animation-iteration-count: infinite;
+
+animation-name: STAR-MOVE;
+animation-duration: 750s;
+animation-timing-function: linear;
+animation-iteration-count: infinite;
+}
+
+#background {
+background: black url(/img/background.png) repeat 5% 5%;
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+z-index: -100;
+-webkit-animation-name: STAR-MOVE;
+-webkit-animation-duration: 1000s;
+-webkit-animation-timing-function: linear;
+-webkit-animation-iteration-count: infinite;
+
+animation-name: STAR-MOVE;
+animation-duration: 1000s;
+animation-timing-function: linear;
+animation-iteration-count: infinite;
+}
+
+// @-webkit-keyframes STAR-MOVE {
+//   from {
+//     left: 0;
+//     top: 0;
+//   }
+//   to { 
+//     left: -10000px;
+//     top: -2000px;
+//   }
+// }
+
+@-webkit-keyframes STAR-MOVE {
+  from {
+    background-position: 5% 5%
+  }
+  to { 
+    background-position: 1300% 600%
+  }
+}
+
+@keyframes STAR-MOVE {
+  from {
+    background-position: 5% 5%
+  }
+  to { 
+    background-position: 1300% 600%
+  }
+}
+
+@media (max-width: @screen-xs-max) {
+    #background, #midground, #foreground
+    {
+      animation: none;
+      -webkit-animation:none;
+    }
+
+    .wow
+    {
+      visibility: visible !important;
+    }
+}
+
+
+@keyframes SPACEMAN-MOVE {
+  from {
+    left: 100%;
+    -webkit-transform: rotate(15deg); /* Chrome, Safari, Opera */
+    transform: rotate(15deg);
+  }
+  to { 
+    left: -10%;
+    -webkit-transform: rotate(-90deg); /* Chrome, Safari, Opera */
+    transform: rotate(-90deg);
+  }
+}
+@-webkit-keyframes SPACEMAN-MOVE {
+  from {
+    left: 100%;
+    -webkit-transform: rotate(15deg); /* Chrome, Safari, Opera */
+    transform: rotate(15deg);
+  }
+  to { 
+    left: -10%;
+    -webkit-transform: rotate(-90deg); /* Chrome, Safari, Opera */
+    transform: rotate(-90deg);
+  }
+}
+
+#meteor-spaceman
+{
+  // max-width: 150px;
+  z-index: -1;
+  position: absolute;
+  -webkit-animation-name: SPACEMAN-MOVE;
+  -webkit-animation-duration: 130s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+
+  animation-name: SPACEMAN-MOVE;
+  animation-duration: 130s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  
+}
+
+
+@-webkit-keyframes SPACESHIP-MOVE {
+  0%   {top: 35%; left: -10%;}
+  1%  {top: 35%; left: 110%;}
+  100% {top: 35%; left: 100%;}
+}
+@keyframes SPACESHIP-MOVE {
+  0%   {top: 35%; left: -10%;}
+  1%  {top: 35%; left: 110%;}
+  100% {top: 35%; left: 100%;}
+}
+
+#meteor-spaceship
+{
+  position: absolute;
+  -webkit-animation-name: SPACESHIP-MOVE;
+  -webkit-animation-duration: 130s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+
+  animation-name: SPACESHIP-MOVE;
+  animation-duration: 130s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+
+}
+
+@keyframes METEOR-MOVE {
+  0%   {top: 150%; left: 70%;}
+  1%  {top: -50%; left: 30%;}
+  100% {top: -50%; left: 30%;}
+}
+@-webkit-keyframes METEOR-MOVE {
+  0%   {top: 150%; left: 70%;}
+  1%  {top: -50%; left: 30%;}
+  100% {top: -50%; left: 30%;}
+}
+
+#meteor-meteor
+{
+  z-index: -1;
+  top: 150%;
+  position: absolute;
+  -webkit-animation-name: METEOR-MOVE;
+  -webkit-animation-delay: 3s;
+  -webkit-animation-duration: 130s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+
+  animation-name: METEOR-MOVE;
+  animation-delay: 3s;
+  animation-duration: 130s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+
+}
