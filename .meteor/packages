@@ -23,6 +23,7 @@ multiply:iron-router-progress
 manuelschoebel:ms-seo
 bootstrap
 accounts-ui
-spiderable
 fastclick
+spiderable
+meteorhacks:fast-render
 

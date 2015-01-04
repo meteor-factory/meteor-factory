@@ -1,9 +1,9 @@
 Meteor.startup ->
   if Meteor.isClient
     SEO.config
-      title: @Config.name
+      title: 'Professional Meteor Development'
       meta:
-        description:  @Config.subtitle
+        description:  'A Meteor development agency based in Berlin'
 
-      # og:
-      #   image: "http://manuel-schoebel.com/images/authors/manuel-schoebel.jpg"
+      og:
+        image: "http://meteorfactory.io/img/meteor_agency_2.png"
