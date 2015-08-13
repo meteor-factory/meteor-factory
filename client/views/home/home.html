@@ -284,19 +284,27 @@
                     </div>
                 </div>
                 <div class="row">
+                    {{#each Config.TeamMembers}}
                     <div class="col-sm-4">
                         <div class="team-member">
-                            <img src="img/team/ben.jpg" class="img-responsive img-circle" alt="">
-                            <h4>Ben Jones</h4>
-                            <p class="text-muted">Founder</p>
+                            <img src="{{img}}" class="img-responsive img-circle" alt="">
+                            <h4>{{name}}</h4>
+                            <p class="text-muted">{{role}}</p>
                             <ul class="list-inline social-buttons">
-                                <li><a href="http://twitter.com/benpeterjones"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="http://bit.ly/ben_jones"><i class="fa fa-linkedin"></i></a></li>
-                                <li><a href="http://github.com/yogiben"><i class="fa fa-github"></i></a></li>
+                                {{#if socialLinks.twitter}}
+                                <li><a href="{{socialLinks.twitter}}"><i class="fa fa-twitter"></i></a></li>
+                                {{/if}}
+                                {{#if socialLinks.linkedIn}}
+                                <li><a href="{{socialLinks.linkedIn}}"><i class="fa fa-linkedin"></i></a></li>
+                                {{/if}}
+                                {{#if socialLinks.github}}
+                                <li><a href="{{socialLinks.github}}"><i class="fa fa-github"></i></a></li>
+                                {{/if}}
                             </ul>
                         </div>
                     </div>
-                    <div class="col-sm-4">
+                    {{/each}}
+                    <!-- <div class="col-sm-4">
                         <div class="team-member">
                             <img src="img/team/michal.jpg" class="img-responsive img-circle" alt="">
                             <h4>Michał Powaga</h4>
@@ -340,7 +348,7 @@
                                 <li><a target="_blank" href="https://www.linkedin.com/pub/diane-germann/21/941/3a0"><i class="fa fa-linkedin"></i></a></li>
                             </ul>
                         </div>
-                    </div>
+                    </div> -->
                     
                 </div>
                 <div class="row">
