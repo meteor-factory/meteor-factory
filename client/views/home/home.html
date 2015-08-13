@@ -93,42 +93,44 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-4 col-sm-6 portfolio-item wow fadeInUp animated" data-wow-delay="0.3s">
-                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                {{#each Config.Projects}}
+                <div class="col-md-4 col-sm-6 portfolio-item wow {{fade.style}} animated" data-wow-delay="{{fade.delay}}">
+                    <a href="#{{link}}" class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
                                 <i class="fa fa-rocket fa-3x"></i>
                             </div>
                         </div>
-                        <img src="/img/meteor_app_1.png" class="img-responsive" alt="">
+                        <img src="{{img}}" class="img-responsive" alt="">
                     </a>
                     <div class="portfolio-caption">
-                        <h4>Bitwala</h4>
-                        <p class="text-muted">Pay your bills with Bitcoin</p>
+                        <h4>{{name}}</h4>
+                        <p class="text-muted">{{description}}</p>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-6 portfolio-item wow fadeInLeft animated" data-wow-delay="0.2s">
+                {{/each}}
+                <!-- <div class="col-md-4 col-sm-6 portfolio-item wow  animated" data-wow-delay="">
                     <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
                                 <i class="fa fa-rocket fa-3x"></i>
                             </div>
                         </div>
-                        <img src="/img/meteor_app_2.png" class="img-responsive" alt="">
+                        <img src="" class="img-responsive" alt="">
                     </a>
                     <div class="portfolio-caption">
                         <h4>Flight Noodle</h4>
                         <p class="text-muted">Adventure generator</p>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-6 portfolio-item wow fadeInRight animated" data-wow-delay="0.4s">
+                <div class="col-md-4 col-sm-6 portfolio-item wow animated" data-wow-delay="">
                     <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
                                 <i class="fa fa-rocket fa-3x"></i>
                             </div>
                         </div>
-                        <img src="/img/meteor_app_3.png" class="img-responsive" alt="">
+                        <img src="" class="img-responsive" alt="">
                     </a>
                     <div class="portfolio-caption">
                         <h4>Vocab.li</h4>
@@ -176,7 +178,7 @@
                         <h4>Learn.MeteorFactory</h4>
                         <p class="text-muted">Tutorials and guides</p>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </section>
