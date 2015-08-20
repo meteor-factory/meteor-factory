@@ -21,9 +21,10 @@ yogiben:user-helpers
 iron:router@1.0.0
 multiply:iron-router-progress
 manuelschoebel:ms-seo
-bootstrap
+# bootstrap
 accounts-ui
 fastclick
 spiderable
 meteorhacks:fast-render
+mizzao:bootstrap-3
 

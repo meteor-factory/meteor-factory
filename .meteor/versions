@@ -12,7 +12,6 @@ binary-heap@1.0.1
 blaze-tools@1.0.1
 blaze@2.0.3
 boilerplate-generator@1.0.1
-bootstrap@0.3.1
 callback-hook@1.0.1
 cfs:access-point@0.1.43
 cfs:base-package@0.0.27
@@ -72,6 +71,7 @@ meteorhacks:inject-data@1.4.0
 meteorhacks:picker@1.0.3
 minifiers@1.1.2
 minimongo@1.0.5
+mizzao:bootstrap-3@3.3.1_1
 mobile-status-bar@1.0.1
 mongo-livedata@1.0.6
 mongo@1.0.9
