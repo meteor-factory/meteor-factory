@@ -1,6 +1,6 @@
 <template name="portfolioModals">
-    <!-- Portfolio Modal 1 -->
-        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+    {{#each Config.Projects}}
+        <div class="portfolio-modal modal fade" id="{{link}}" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-content">
                 <div class="close-modal" data-dismiss="modal">
                     <div class="lr">
@@ -13,15 +13,10 @@
                         <div class="col-lg-8 col-lg-offset-2">
                             <div class="modal-body">
                                 <!-- Project Details Go Here -->
-                                <h2>Bitwa.la</h2>
-                                <p class="item-intro text-muted">Pay your bills with Bitcoin</p>
-                                <img class="img-responsive" src="img/meteor_app_1_lg.png" alt="">
-                                <p>
-                                    Bitwa.la is an online platform for making bill payments with Bitcoin.
-                                </p>
-                                <p>
-                                   Our goals were to make it as simple as possible to create and manage bills. We wanted users to enjoy the functionality of online banking, but without the clunky infrastructure.
-                               </p>
+                                <h2>{{name}}</h2>
+                                <p class="item-intro text-muted">{{description}}</p>
+                                <img class="img-responsive" src="{{imgLg}}" alt="">
+                                {{{nlToP longDescription}}}
                                 <a href="http://bitwa.la" target="_blank" class="btn btn-primary btn-hollow"><i class="fa fa-link"></i> View project</a>
                             </div>
                         </div>
@@ -29,157 +24,5 @@
                 </div>
             </div>
         </div>
-    
-        <!-- Portfolio Modal 2 -->
-        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl">
-                        </div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 col-lg-offset-2">
-                            <div class="modal-body">
-                                <h2>Flight Miner</h2>
-                                <p class="item-intro text-muted">Adventure generator</p>
-                                <img class="img-responsive" src="img/meteor_app_2_lg.png" alt="">
-                                <p>
-                                    Flight Noodle is an flight search engine with a twist.
-                                </p>
-                                <p>
-                                   The user creates a multistop trip by connection cheap flight son a map.
-                               </p>
-                                <a href="http://flightnoodle.com" target="_blank" class="btn btn-primary btn-hollow"><i class="fa fa-link"></i> View project</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    
-        <!-- Portfolio Modal 3 -->
-        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl">
-                        </div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 col-lg-offset-2">
-                            <div class="modal-body">
-                                <h2>Vocab.li</h2>
-                                <p class="item-intro text-muted">Manage your vocab online</p>
-                                <img class="img-responsive" src="img/meteor_app_3_lg.png" alt="">
-                                <p>
-                                    Vocab.li is an app for language leaners to organise and review their vocab.
-                                </p>
-                                <p>
-                                   The user enters the words they want to review and the vocabulary is organized automatically. The user can then test themselves.
-                               </p>
-                                <a href="http://vocab.li" target="_blank" class="btn btn-primary btn-hollow disabled"> <i class="fa fa-wrench"></i> Under renovation</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    
-        <!-- Portfolio Modal 4 -->
-        <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl">
-                        </div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 col-lg-offset-2">
-                            <div class="modal-body">
-                                <!-- Project Details Go Here -->
-                                <h2>Meteor Admin</h2>
-                                <p class="item-intro text-muted">A complete admin dashboard solution</p>
-                                <img class="img-responsive" src="img/meteor_app_4_lg.png" alt="">
-                                 <p>
-                                    Meteor Admin is an open source Meteor package that adds an admin dashboard.
-                                </p>
-                                <p>
-                                  Moving from Wordpress, I was frustrated by having to build boring features again and again. This propelled me to develop an admin package which lets the user add, update and delete items from collections.
-                               </p>
-                                <a href="http://github.com/yogiben/meteor-admin" target="_blank" class="btn btn-primary btn-hollow"><i class="fa fa-link"></i> View project</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    
-        <!-- Portfolio Modal 5 -->
-        <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl">
-                        </div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 col-lg-offset-2">
-                            <div class="modal-body">
-                                <!-- Project Details Go Here -->
-                                <h2>Meteor Starter</h2>
-                                <p class="item-intro text-muted">A ridiculously simply boilerplate for Meteor apps</p>
-                                <img class="img-responsive" src="img/meteor_app_5_lg.png" alt="">
-                                 <p>
-                                    Meteor Starter is the starting point for great Meteor apps
-                                </p>
-                                <p>
-                                  This opiniated open source project lets you focus on the important parts of your app.
-                                </p>
-                                <a href="http://github.com/yogiben/meteor-starter" target="_blank" class="btn btn-primary btn-hollow"><i class="fa fa-link"></i> View project</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    
-        <!-- Portfolio Modal 6 -->
-        <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl">
-                        </div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 col-lg-offset-2">
-                            <div class="modal-body">
-                                <!-- Project Details Go Here -->
-                                <h2>Learn.MeteorFactory</h2>
-                                <p class="item-intro text-muted">Free Meteor tips and tutorials</p>
-                                <img class="img-responsive" src="img/meteor_app_6_lg.png" alt="">
-                                 <p>
-                                    For my semester teaching Meteor at <a href="http://meltwater.org" target="_blank">MEST</a> in Ghana, we've prepared online resources, available to all.
-                                </p>
-                                <p>
-                                  A work in progress. We hope to cover Meteor basics as well as explaining how some of our <a href="http://github.com/yogiben" target="_blank">open source</a> projects work.
-                                </p>
-                                <a href="http://github.com/yogiben/meteor-starter" target="_blank" class="btn btn-primary btn-hollow"><i class="fa fa-link"></i> View project</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    {{/each}}
 </template>
