@@ -55,7 +55,7 @@ Config.TeamMembers = [
 	socialLinks:
 		facebooK: ''
 		twitter: 'https://twitter.com/jasenkoh'
-		linkedIn: 'linkedin.com/in/jasenkoh'
+		linkedIn: 'https://linkedin.com/in/jasenkoh'
 		googlePlus: ''
 		github: 'https://github.com/jasenkoh'
 ]
