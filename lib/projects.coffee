@@ -32,7 +32,7 @@ Config.Projects = [
 	url: "http://flightnoodle.com"
 	longDescription: """
 			Flight Noodle is an flight search engine with a twist.
-			The user creates a multistop trip by connection cheap flight son a map.
+			The user creates a multistop trip by connection cheap flights on a map.
 	"""
 	img: '/img/meteor_app_3.png'
 	imgLg: '/img/meteor_app_3_lg.png'
@@ -74,7 +74,7 @@ Config.Projects = [
 	url: "http://learn.meteorfactory.io/teach-mest-meteor-in-ghana/"
 	longDescription: """
 		I taught an intensive Meteor course at the Ghanaian entrepreneurship school, <a href="http://meltwater.org" target="_blank">MEST</a>.
-		We went from beginner to intermediate in 6 weeks and Meteor continues to be popular choice amongst the students..
+		We went from beginner to intermediate in 6 weeks and Meteor continues to be popular choice amongst the studentss.
 	"""
 	img: '/img/meteor_app_6.png'
 	imgLg: '/img/meteor_app_6_lg.png'
