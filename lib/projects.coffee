@@ -1,9 +1,36 @@
 Config.Projects = [
+	name: "Fooducer"
+	description: "Digital tools for the food industry"
+	url: "http://fooducer.com"
+	longDescription: """
+		Fooducer make it easier for food professionals to reach out, showcase products, tell their story and distribute the necessary product information.
+	"""
+	img: "img/meteor_app_fooducer.jpg"
+	imgLg: "img/meteor_app_fooducer_lg.jpg"
+	link: "portfolioModalFooducer"
+	fade:
+		style: 'fadeInDown'
+		delay: '0.2s'
+,
+	name: "Guardio"
+	description: "An Uber for security guards"
+	url: "http://guardio.fr/"
+	longDescription: """
+		Guardio is an Uber for security guards.
+		Now it's easy and flexible to hire trusted security guards for events. Create an event and we'll match you with professional guards, rated by the community.
+	"""
+	img: "img/meteor_app_guardio.jpg"
+	imgLg: "img/meteor_app_guardio_lg.jpg"
+	link: "portfolioModalGuardio"
+	fade:
+		style: 'fadeInLeft'
+		delay: '0.2s'
+,
 	name: "Bitwala"
 	description: "Pay your bills with Bitcoin"
 	url: "https://bitwa.la"
 	longDescription: """
-     Bitwa.la is an online platform for making bill payments with Bitcoin.
+    Bitwa.la is an online platform for making bill payments with Bitcoin.
     Our goals were to make it as simple as possible to create and manage bills. We wanted users to enjoy the functionality of online banking, but without the clunky infrastructure.
 	"""
 	img: '/img/meteor_app_1.png'
