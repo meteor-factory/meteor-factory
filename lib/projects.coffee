@@ -12,20 +12,6 @@ Config.Projects = [
 		style: 'fadeInDown'
 		delay: '0.2s'
 ,
-	name: "Guardio"
-	description: "An Uber for security guards"
-	url: "http://guardio.fr/"
-	longDescription: """
-		Guardio is an Uber for security guards.
-		Now it's easy and flexible to hire trusted security guards for events. Create an event and we'll match you with professional guards, rated by the community.
-	"""
-	img: "img/meteor_app_guardio.jpg"
-	imgLg: "img/meteor_app_guardio_lg.jpg"
-	link: "portfolioModalGuardio"
-	fade:
-		style: 'fadeInLeft'
-		delay: '0.2s'
-,
 	name: "Bitwala"
 	description: "Pay your bills with Bitcoin"
 	url: "https://bitwa.la"
