@@ -3,7 +3,7 @@ Config.Projects = [
 	description: "Digital tools for the food industry"
 	url: "http://fooducer.com"
 	longDescription: """
-		Fooducer make it easier for food professionals to reach out, showcase products, tell their story and distribute the necessary product information.
+		Fooducer makes it easier for food professionals to reach out, showcase products, tell their story and distribute the necessary product information.
 	"""
 	img: "img/meteor_app_fooducer.jpg"
 	imgLg: "img/meteor_app_fooducer_lg.jpg"
