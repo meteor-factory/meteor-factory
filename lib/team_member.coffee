@@ -9,6 +9,16 @@ Config.TeamMembers = [
 		googlePlus: ''
 		github: 'http://github.com/yogiben'
 ,
+	name: "Jörg Lück"
+	role: "Project Manager and UX"
+	img: "img/team/jorg.jpg"
+	socialLinks:
+		facebooK: ''
+		twitter: 'https://twitter.com/followyour_eyes'
+		linkedIn: 'https://de.linkedin.com/in/joerglueck'
+		googlePlus: ''
+		github: 'https://github.com/followyoureyes'
+,
 	name: "Michał Powaga"
 	role: "Developer"
 	img: "img/team/michal.jpg"
@@ -48,16 +58,6 @@ Config.TeamMembers = [
 		linkedIn: 'https://www.linkedin.com/pub/diane-germann/21/941/3a0'
 		googlePlus: ''
 		github: ''
-,
-	name: "Jörg Lück"
-	role: "Project Manager and UX"
-	img: "img/team/jorg.jpg"
-	socialLinks:
-		facebooK: ''
-		twitter: 'https://twitter.com/followyour_eyes'
-		linkedIn: 'https://de.linkedin.com/in/joerglueck'
-		googlePlus: ''
-		github: 'https://github.com/followyoureyes'
 ,
 	name: "Chris Westgarth"
 	role: "Content"
