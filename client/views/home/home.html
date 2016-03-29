@@ -201,8 +201,8 @@
         <div class="row">
           <div class="col-md-4 text-center">
             <h3>
-                            An MVP in 4 weeks?
-                        </h3>
+              An MVP in 4 weeks?
+            </h3>
             <p>
               We built your idea fast and reliable. So you can bring your product out to world as early as possible.
             </p>
@@ -213,6 +213,13 @@
           <div class="col-md-8">
             <img src="img/screenshot.png" class="img-responsive" alt="picture">
           </div>
+        </div>
+        <div class="row">
+          {{#each Config.testimonials}}
+          <div class="col-sm-4 col-xs-12">
+            {{{this}}}
+          </div>
+          {{/each}}
         </div>
       </div>
     </section>
