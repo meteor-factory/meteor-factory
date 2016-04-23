@@ -1,339 +1,348 @@
 <template name="home">
-  {{> analytics}}
-  <div id="skrollr-body">
-    <!-- {{> skrollrBackground}}  -->
-    <section id="intro" class="colored text-center">
-      <header>
-        <nav class="navbar navbar-default hidden-xs" role="navigation">
-          <div class="container">
-            <div class="container">
-              <a class="navbar-brand" href="{{pathFor 'home'}}">{{Config.name}}</a>
-              <div id="main-nav" class="navbar-collapse">
-                <ul class="social-links">
-                  {{#unless currentUser}}
-                  <a id="home-login" href="{{Config.about}}">
-                    <li>Learn Meteor</li>
-                  </a>
-                  {{/unless}} {{#each socialMedia}}
-                  <a href="{{url}}" target="_blank">
-                    <li class="fa fa-{{icon}}"></li>
-                  </a>
-                  {{/each}}
-                </ul>
-              </div>
-            </div>
-          </div>
-        </nav>
-      </header>
-      <div class="container absolute">
-        <div class="intro-well">
-          <div class="row">
-            <div class="col-lg-12 col-sm-12">
-              <img src="/img/logo.png" id="logo" alt="" class="wow animated fadeInDown" data-wow-delay="0.2s">
-              <!-- <img src="/img/meteor_agency.png" alt=""> -->
-              <h1 class="wow fadeInUp animated" data-wow-delay="0.5s">Professional Meteor Development</h1>
-              <!-- <h1 class="wow fadeInUp animated" data-wow-delay="0.5s">A Meteor Agency</h1> -->
-              <!-- <h2 class="wow fadeInUp animated" data-wow-delay="0.7s">Professional Meteor Development</h2> -->
-              <a class="btn btn-success wow fadeInUp animated" data-wow-delay="0.9s" target="_blank" href="mailto:ben@meteorfactory.io">Contact us</a>
-            </div>
-            <!--                 <div class="col-lg-6 col-sm-6">
+    {{> analytics}}
+    <div id="skrollr-body">
+        <!-- {{> skrollrBackground}}  -->
+        <section id="intro" class="colored text-center">
+            <header>
+                <nav class="navbar navbar-default hidden-xs" role="navigation">
+                    <div class="container">
+                        <div class="container">
+                            <a class="navbar-brand" href="{{pathFor 'home'}}">{{Config.name}}</a>
+                            <div id="main-nav" class="navbar-collapse">
+                                <ul class="social-links">
+                                    {{#unless currentUser}}
+                                    <a id="home-login" href="{{Config.about}}">
+                                        <li>Learn Meteor</li>
+                                    </a>
+                                    {{/unless}} {{#each socialMedia}}
+                                    <a href="{{url}}" target="_blank">
+                                        <li class="fa fa-{{icon}}"></li>
+                                    </a>
+                                    {{/each}}
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+            <div class="container absolute">
+                <div class="intro-well">
+                    <div class="row">
+                        <div class="col-lg-12 col-sm-12">
+                            <img src="/img/logo.png" id="logo" alt="" class="wow animated fadeInDown" data-wow-delay="0.2s">
+                            <!-- <img src="/img/meteor_agency.png" alt=""> -->
+                            <h1 class="wow fadeInUp animated" data-wow-delay="0.5s">Professional Meteor Development</h1>
+                            <!-- <h1 class="wow fadeInUp animated" data-wow-delay="0.5s">A Meteor Agency</h1> -->
+                            <!-- <h2 class="wow fadeInUp animated" data-wow-delay="0.7s">Professional Meteor Development</h2> -->
+                            <a class="btn btn-success wow fadeInUp animated" data-wow-delay="0.9s" target="_blank" href="mailto:ben@meteorfactory.io">Contact us</a>
+                        </div>
+                        <!--                 <div class="col-lg-6 col-sm-6">
                                                 <img class="img-responsive" src="/img/image-header1.png" alt="">
                     </div> -->
-          </div>
-        </div>
-      </div>
-      <img id="meteor-bottom" src="/img/meteor_bottom.png" alt="">
-      <img src="/img/meteor_flag.png" alt="" id="meteor-flag">
-      <!-- <img src="/img/meteor_planets.png" alt="" id="meteor-planets"> -->
-      <img src="/img/meteor_spaceman.png" alt="" id="meteor-spaceman">
-      <img src="/img/meteor_spaceship.png" alt="" id="meteor-spaceship">
-      <img src="/img/meteor_meteor.png" alt="" id="meteor-meteor">
-    </section>
-    <section id="how-it-works" class="text-center">
-      <div class="container wow fadeIn animated">
-        <h2 class="section-heading">What makes us different</h2>
-        <h3 class="section-subheading text-muted"></h3>
-      </div>
-      <div class="container">
-        <div class="row" id="icon-row">
-          <div class="col-sm-4">
-            <div class="iconbox">
-              <img src="/img/Telescope.png" alt="">
+                    </div>
+                </div>
             </div>
-            <p class="icntitle">Design First</p>
-            <p class="icnp">Everything we make is beautiful</p>
-          </div>
-          <div class="col-sm-4">
-            <div class="iconbox">
-              <img src="/img/meteor_agency_2.png" alt="">
+            <img id="meteor-bottom" src="/img/meteor_bottom.png" alt="">
+            <img src="/img/meteor_flag.png" alt="" id="meteor-flag">
+            <!-- <img src="/img/meteor_planets.png" alt="" id="meteor-planets"> -->
+            <img src="/img/meteor_spaceman.png" alt="" id="meteor-spaceman">
+            <img src="/img/meteor_spaceship.png" alt="" id="meteor-spaceship">
+            <img src="/img/meteor_meteor.png" alt="" id="meteor-meteor">
+        </section>
+        <section id="how-it-works" class="text-center">
+            <div class="container wow fadeIn animated">
+                <h2 class="section-heading">What makes us different</h2>
+                <h3 class="section-subheading text-muted"></h3>
             </div>
-            <p class="icntitle">100% Meteor</p>
-            <p class="icnp">We only work with one framework</p>
-          </div>
-          <div class="col-sm-4">
-            <div class="iconbox">
-              <img src="/img/Moon Flag.png" alt="">
+            <div class="container">
+                <div class="row" id="icon-row">
+                    <div class="col-sm-4">
+                        <div class="iconbox">
+                            <img src="/img/Telescope.png" alt="">
+                        </div>
+                        <p class="icntitle">Design First</p>
+                        <p class="icnp">Everything we make is beautiful</p>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="iconbox">
+                            <img src="/img/meteor_agency_2.png" alt="">
+                        </div>
+                        <p class="icntitle">100% Meteor</p>
+                        <p class="icnp">We only work with one framework</p>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="iconbox">
+                            <img src="/img/Moon Flag.png" alt="">
+                        </div>
+                        <p class="icntitle">We're entrepreneurs</p>
+                        <p class="icnp">We've built our own startups</p>
+                    </div>
+                </div>
             </div>
-            <p class="icntitle">We're entrepreneurs</p>
-            <p class="icnp">We've built our own startups</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- <section id="examples">
+        </section>
+        <!-- <section id="examples">
                 <div class="container wow fadeInUp animated">
                         <h1>Great features!</h1>
                         <h2>You can use {{Config.siteName}} to do anything</h2>
                 </div>
     </section> -->
 
-    <section id="portfolio" class="colored">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <h2 class="section-heading">Built by us</h2>
-            <h3 class="section-subheading text-muted">Meteor is production ready - we're proof</h3>
-          </div>
-        </div>
-        <div class="row">
-          {{#each Config.Projects}}
-          <div class="col-md-4 col-sm-6 portfolio-item">
-            <a href="#{{link}}" class="portfolio-link" data-toggle="modal">
-              <div class="portfolio-hover">
-                <div class="portfolio-hover-content" style="background-image:url('/img/meteor.png');background-size:cover;">
+        <section id="portfolio" class="colored">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h2 class="section-heading">Built by us</h2>
+                        <h3 class="section-subheading text-muted">Meteor is production ready - we're proof</h3>
+                    </div>
                 </div>
-              </div>
-              <img src="{{img}}" class="img-responsive" alt="">
-            </a>
-            <div class="portfolio-caption">
-              <h4>{{name}}</h4>
-              <p class="text-muted">{{description}}</p>
+                <div class="row">
+                    {{#each Config.Projects}}
+                    <div class="col-md-4 col-sm-6 portfolio-item">
+                        <a href="#{{link}}" class="portfolio-link" data-toggle="modal">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content" style="background-image:url('/img/meteor.png');background-size:cover;">
+                                </div>
+                            </div>
+                            <img src="{{img}}" class="img-responsive" alt="">
+                        </a>
+                        <div class="portfolio-caption">
+                            <h4>{{name}}</h4>
+                            <p class="text-muted">{{description}}</p>
+                        </div>
+                    </div>
+                    {{/each}}
+                </div>
+                <div class="row">
+                    {{#each Config.OpenSource}}
+                    <div class="col-md-3 text-center">
+                        <h4>{{name}}</h4>
+                        <iframe src="https://ghbtns.com/github-btn.html?user={{user}}&repo={{repo}}&type=star&count=true&size=large" frameborder="0" scrolling="0" width="160px" height="30px"></iframe>
+                    </div>
+                    {{/each}}
+                </div>
             </div>
-          </div>
-          {{/each}}
-        </div>
-        <div class="row">
-          {{#each Config.OpenSource}}
-          <div class="col-md-3 text-center">
-            <h4>{{name}}</h4>
-            <iframe src="https://ghbtns.com/github-btn.html?user={{user}}&repo={{repo}}&type=star&count=true&size=large" frameborder="0" scrolling="0" width="160px" height="30px"></iframe>
-          </div>
-          {{/each}}
-        </div>
-      </div>
-    </section>
-    <section id="about">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <h2 class="section-heading">How we build</h2>
-            <h3 class="section-subheading text-muted">Click 'Get in touch' and this is what happens</h3>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-12">
-            <ul class="timeline">
-              <li>
-                <div class="timeline-image wow fadeInRight animated" data-wow-delay="0.4s">
-                  <img class="img-circle img-responsive" src="img/timeline_1.jpg" alt="">
+        </section>
+        <section id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h2 class="section-heading">How we build</h2>
+                        <h3 class="section-subheading text-muted">Click 'Get in touch' and this is what happens</h3>
+                    </div>
                 </div>
-                <div class="timeline-panel">
-                  <div class="timeline-heading">
-                    <h4 class="subheading">Discuss & Understand</h4>
-                  </div>
-                  <div class="timeline-body">
-                    <p class="text-muted">
-                      What is your product? How soon should it be ready? Are we a good fit? If so, we provide you with an estimate.
-                    </p>
-                  </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <ul class="timeline">
+                            <li>
+                                <div class="timeline-image wow fadeInRight animated" data-wow-delay="0.4s">
+                                    <img class="img-circle img-responsive" src="img/timeline_1.jpg" alt="">
+                                </div>
+                                <div class="timeline-panel">
+                                    <div class="timeline-heading">
+                                        <h4 class="subheading">Discuss & Understand</h4>
+                                    </div>
+                                    <div class="timeline-body">
+                                        <p class="text-muted">
+                                            What is your product? How soon should it be ready? Are we a good fit? If so, we provide you with an estimate.
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="timeline-inverted">
+                                <div class="timeline-image wow fadeInLeft animated" data-wow-delay="0.4s">
+                                    <img class="img-circle img-responsive" src="img/timeline_2.jpg" alt="">
+                                </div>
+                                <div class="timeline-panel">
+                                    <div class="timeline-heading">
+                                        <h4 class="subheading">Plan & Design</h4>
+                                    </div>
+                                    <div class="timeline-body">
+                                        <p class="text-muted">
+                                            Next we develop your idea into a storyboard. What are the main goals of the user? How should the product look and feel?
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="timeline-image  wow fadeInLeft animated" data-wow-delay="0.4s">
+                                    <img class="img-circle img-responsive" src="img/timeline_3.jpg" alt="">
+                                </div>
+                                <div class="timeline-panel">
+                                    <div class="timeline-heading">
+                                        <h4 class="subheading">Build & Test</h4>
+                                    </div>
+                                    <div class="timeline-body">
+                                        <p class="text-muted">Our team of designers, developers and project managers excel at execution. We'll keep you in the loop via <a href="http://slack.com/" target="_blank">Slack</a>, <a href="http://trello.com" target="_blank">Trello</a>                                            and <a href="http://github.com/yogiben">Github</a>.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="timeline-inverted">
+                                <div class="timeline-image wow fadeInRight animated" data-wow-delay="0.4s">
+                                    <img class="img-circle img-responsive" src="img/timeline_4.jpg" alt="">
+                                </div>
+                                <div class="timeline-panel">
+                                    <div class="timeline-heading">
+                                        <h4 class="subheading">Launch & Track</h4>
+                                    </div>
+                                    <div class="timeline-body">
+                                        <p class="text-muted">
+                                            Server and domain setup is something we'll take care of. So you only have to worry about engaging with your first users.
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-              </li>
-              <li class="timeline-inverted">
-                <div class="timeline-image wow fadeInLeft animated" data-wow-delay="0.4s">
-                  <img class="img-circle img-responsive" src="img/timeline_2.jpg" alt="">
-                </div>
-                <div class="timeline-panel">
-                  <div class="timeline-heading">
-                    <h4 class="subheading">Plan & Design</h4>
-                  </div>
-                  <div class="timeline-body">
-                    <p class="text-muted">
-                      Next we develop your idea into a storyboard. What are the main goals of the user? How should the product look and feel?
-                    </p>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="timeline-image  wow fadeInLeft animated" data-wow-delay="0.4s">
-                  <img class="img-circle img-responsive" src="img/timeline_3.jpg" alt="">
-                </div>
-                <div class="timeline-panel">
-                  <div class="timeline-heading">
-                    <h4 class="subheading">Build & Test</h4>
-                  </div>
-                  <div class="timeline-body">
-                    <p class="text-muted">Our team of designers, developers and project managers excel at execution. We'll keep you in the loop via <a href="http://slack.com/" target="_blank">Slack</a>, <a href="http://trello.com" target="_blank">Trello</a> and <a href="http://github.com/yogiben">Github</a>.</p>
-                  </div>
-                </div>
-              </li>
-              <li class="timeline-inverted">
-                <div class="timeline-image wow fadeInRight animated" data-wow-delay="0.4s">
-                  <img class="img-circle img-responsive" src="img/timeline_4.jpg" alt="">
-                </div>
-                <div class="timeline-panel">
-                  <div class="timeline-heading">
-                    <h4 class="subheading">Launch & Track</h4>
-                  </div>
-                  <div class="timeline-body">
-                    <p class="text-muted">
-                      Server and domain setup is something we'll take care of. So you only have to worry about engaging with your first users.
-                    </p>
-                  </div>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="final" class="colored">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4 text-center">
-            <h3>
-              An MVP in 4 weeks?
-            </h3>
-            <p>
-              We built your idea fast and reliable. So you can bring your product out to world as early as possible.
-            </p>
-            <div class="text-center">
-              <a class="btn btn-primary" target="_blank" href="mailto:ben@meteorfactory.io">Get in touch</a>
             </div>
-          </div>
-          <div class="col-md-8">
-            <img src="img/screenshot.png" class="img-responsive" alt="picture">
-          </div>
-        </div>
-        <div class="row">
-          {{#each Config.testimonials}}
-          <div class="col-sm-4 col-xs-12">
-            {{{this}}}
-          </div>
-          {{/each}}
-        </div>
-      </div>
-    </section>
+        </section>
+        <section id="final" class="colored">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 text-center">
+                        <h3>An MVP in 4 weeks?</h3>
+                        <p>
+                            We built your idea fast and reliable. So you can bring your product out to world as early as possible.
+                        </p>
+                        <div class="text-center">
+                            <a class="btn btn-primary" target="_blank" href="mailto:ben@meteorfactory.io">Get in touch</a>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <img src="img/screenshot.png" class="img-responsive" alt="picture">
+                    </div>
+                </div>
+                <div class="row">
+                    {{#each Config.testimonials}}
+                    <div class="col-sm-4 col-xs-12">
+                        {{{this}}}
+                    </div>
+                    {{/each}}
+                </div>
+            </div>
+        </section>
 
-    <section id="team" class="bg-light-gray">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <h2 class="section-heading">Mission Control</h2>
-            <h3 class="section-subheading text-muted">We work to bring you the product that you want</h3>
-          </div>
-        </div>
-        <div class="row">
-          {{#each Config.TeamMembers}}
-          <div class="col-sm-4">
-            <div class="team-member">
-              <img src="{{img}}" class="img-responsive img-circle" alt="">
-              <h4>{{name}}</h4>
-              <p class="text-muted">{{role}}</p>
-              <ul class="list-inline social-buttons">
-                {{#if socialLinks.twitter}}
-                <li><a target="_blank" href="{{socialLinks.twitter}}"><i class="fa fa-twitter"></i></a></li>
-                {{/if}} {{#if socialLinks.linkedIn}}
-                <li><a target="_blank" href="{{socialLinks.linkedIn}}"><i class="fa fa-linkedin"></i></a></li>
-                {{/if}} {{#if socialLinks.github}}
-                <li><a target="_blank" href="{{socialLinks.github}}"><i class="fa fa-github"></i></a></li>
-                {{/if}}
-              </ul>
+        <section id="team" class="bg-light-gray">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h2 class="section-heading">Mission Control</h2>
+                        <h3 class="section-subheading text-muted">We work to bring you the product that you want</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    {{#each Config.TeamMembers}}
+                    <div class="col-sm-4">
+                        <div class="team-member">
+                            <img src="{{img}}" class="img-responsive img-circle" alt="">
+                            <h4>{{name}}</h4>
+                            <p class="text-muted">{{role}}</p>
+                            <ul class="list-inline social-buttons">
+                                {{#if socialLinks.twitter}}
+                                <li><a target="_blank" href="{{socialLinks.twitter}}"><i class="fa fa-twitter"></i></a></li>
+                                {{/if}} {{#if socialLinks.linkedIn}}
+                                <li><a target="_blank" href="{{socialLinks.linkedIn}}"><i class="fa fa-linkedin"></i></a></li>
+                                {{/if}} {{#if socialLinks.github}}
+                                <li><a target="_blank" href="{{socialLinks.github}}"><i class="fa fa-github"></i></a></li>
+                                {{/if}}
+                            </ul>
+                        </div>
+                    </div>
+                    {{/each}}
+                </div>
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2 text-center">
+                        <p class="large text-muted"><i class="fa fa-map-marker"></i> We're based in Berlin</p>
+                    </div>
+                </div>
             </div>
-          </div>
-          {{/each}}
-        </div>
-        <div class="row">
-          <div class="col-lg-8 col-lg-offset-2 text-center">
-            <p class="large text-muted"><i class="fa fa-map-marker"></i> We're based in Berlin</p>
-          </div>
-        </div>
-      </div>
-    </section>
+        </section>
 
-    <section id="contact" class=" text-center">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <p class="text-center">
-              <h4>We'd love to hear from you</h4>
-              <a href="mailto:ben@meteorfactory.io" target="_blank" class="btn btn-lg btn-success">
+        <section id="contact" class=" text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <p class="text-center">
+                            <h4>We'd love to hear from you</h4>
+                            <a href="mailto:ben@meteorfactory.io" target="_blank" class="btn btn-lg btn-success">
                             Contact us
                         </a>
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-    {{> footerHome}}
-  </div>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        {{> footerHome}}
+    </div>
 </template>
 <template name="skrollrBackground">
-  <div id="skroll-background-intro" class="parallax-image-wrapper parallax-image-wrapper-100" data-anchor-target="#intro" data-bottom-top="transform:translate3d(0px, 200%, 0px);opacity:2;" data-top-bottom="transform:translate3d(0px, 0%, 0px);opacity:0;">
-    <div class="parallax-image parallax-image-100" data-anchor-target="#intro" data-bottom-top="transform: translate3d(0px, -80%, 0px);opacity:2;" data-top-bottom="transform: translate3d(0px, 80%, 0px);opacity:0;"></div>
-    <!--the +/-80% translation can be adjusted to control the speed difference of the image-->
-  </div>
+    <div id="skroll-background-intro" class="parallax-image-wrapper parallax-image-wrapper-100" data-anchor-target="#intro" data-bottom-top="transform:translate3d(0px, 200%, 0px);opacity:2;" data-top-bottom="transform:translate3d(0px, 0%, 0px);opacity:0;">
+        <div class="parallax-image parallax-image-100" data-anchor-target="#intro" data-bottom-top="transform: translate3d(0px, -80%, 0px);opacity:2;" data-top-bottom="transform: translate3d(0px, 80%, 0px);opacity:0;"></div>
+        <!--the +/-80% translation can be adjusted to control the speed difference of the image-->
+    </div>
 </template>
 <template name="footerHome">
-  <footer>
-    <div class="container">
-      <div class="row text-center">
-        <div class="col-md-offset-2 col-md-8">
-          <ul class="social-networks">
-            {{#each socialMedia}}
-            <li>
-              <a href="{{url}}" target="_blank">
-                <span class="fa-stack fa-2x">
+    <footer>
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-offset-2 col-md-8">
+                    <ul class="social-networks">
+                        {{#each socialMedia}}
+                        <li>
+                            <a href="{{url}}" target="_blank">
+                                <span class="fa-stack fa-2x">
                             <i class="fa fa-circle fa-stack-2x"></i>
                             <i class="fa fa-{{icon}} fa-stack-1x fa-inverse"></i>
                         </span></a>
-            </li>
-            {{/each}}
-          </ul>
+                        </li>
+                        {{/each}}
+                    </ul>
 
-          <p>
-            MeteorFactory.io is a development agency that specialises in building MVPs for startups using the Javascript framework Meteor JS.
-          </p>
-
-          <a style="color:white;" href="http://learn.meteorfactory.io" target="_blank" class="">
+                    <p>
+                        MeteorFactory.io is a development agency that specialises in building MVPs for startups using the Javascript framework Meteor JS.
+                    </p>
+                    <br>
+                    <a class="white-link" href="http://learn.meteorfactory.io" target="_blank">
                         Learn Meteor with Us
                     </a>
-          <br/>
+                    <br/>
+                    <br>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    {{{Config.footer}}}
+                    <br>
+                    <br>
+                    <small>
+                        <i class="fa fa-map-marker"></i> Find us in <a class="white-link" href="http://transistor.berlin" target="_blank">Transistor</a>, Berlin
+                        <br>
+                        <br>
+                        Code2Create Limited
+                        <br>
+                        No. 5, 17/F Bonham Trade Centre, 50 Bonham Strand Sheung Wan Hong Kong
+                    </small>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-md-12 text-center">
-          {{{Config.footer}}}
-        </div>
-      </div>
-    </div>
-  </footer>
+    </footer>
 </template>
 
 <template name="analytics">
-  <script>
-    (function(i, s, o, g, r, a, m) {
-      i['GoogleAnalyticsObject'] = r;
-      i[r] = i[r] || function() {
-        (i[r].q = i[r].q || []).push(arguments)
-      }, i[r].l = 1 * new Date();
-      a = s.createElement(o),
-        m = s.getElementsByTagName(o)[0];
-      a.async = 1;
-      a.src = g;
-      m.parentNode.insertBefore(a, m)
-    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
-    ga('create', 'UA-58190698-2', 'auto');
-    ga('send', 'pageview');
-  </script>
+        ga('create', 'UA-58190698-2', 'auto');
+        ga('send', 'pageview');
+    </script>
 </template>
