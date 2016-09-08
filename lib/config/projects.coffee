@@ -6,7 +6,7 @@ Config.Projects = [
 		Fooducer makes it easier for food professionals to reach out, showcase products, tell their story and distribute the necessary product information.
 	"""
 	img: "img/meteor_app_fooducer.jpg"
-	imgLg: "img/meteor_app_fooducer_lg.jpg"
+	imgLg: "img/meteor_app_fooducer_lg.png"
 	link: "portfolioModalFooducer"
 	fade:
 		style: 'fadeInDown'
@@ -26,6 +26,23 @@ Config.Projects = [
 		style: ''
 		delay: ''
 ,
+
+	name: "Reelly"
+	description: "Telescope adaption"
+	url: "http://beta.reel.ly"
+	longDescription: """
+			Reelly is a portfolio website for filmmaker's demo reels. It is built on top of
+			Telescope the free, open-source posting platform built with Meteor.
+			The special thing is that users can post a vimeo video and define a start and
+			stop time so they can showcase exactly the scenes they are in or like.
+	"""
+	img: '/img/meteor_app_7.png'
+	imgLg: '/img/meteor_app_7_lg.png'
+	link: 'portfolioModal7'
+	fade:
+		style: 'fadeInLeft'
+		delay: '0.2s'
+,
 	name: "Health Natives"
 	description: "Social network for patients"
 	url: "https://healthnatives.com"
@@ -40,20 +57,20 @@ Config.Projects = [
 		style: 'fadeInLeft'
 		delay: '0.2s'
 ,
-	name: "Flight Noodle"
-	description: "Adventure generator"
-	url: "http://flightnoodle.com"
-	longDescription: """
-			Flight Noodle is an flight search engine with a twist.
-			The user creates a multistop trip by connection cheap flights on a map.
-	"""
-	img: '/img/meteor_app_3.png'
-	imgLg: '/img/meteor_app_3_lg.png'
-	link: 'portfolioModal3'
-	fade:
-		style: 'fadeInRight'
-		delay: '0.4s'
-,
+	# name: "Flight Noodle"
+	# description: "Adventure generator"
+	# url: "http://flightnoodle.com"
+	# longDescription: """
+	# 		Flight Noodle is an flight search engine with a twist.
+	# 		The user creates a multistop trip by connection cheap flights on a map.
+	# """
+	# img: '/img/meteor_app_3.png'
+	# imgLg: '/img/meteor_app_3_lg.png'
+	# link: 'portfolioModal3'
+	# fade:
+	# 	style: 'fadeInRight'
+	# 	delay: '0.4s'
+# ,
 	name: "Meteor Admin"
 	description: "Open-source admin package"
 	url: "https://github.com/yogiben/meteor-admin"
